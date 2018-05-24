@@ -45,7 +45,7 @@ def Chi2(df, total_col, bad_col):
     :param total_col: 全部样本的个数
     :param bad_col: 坏样本的个数
     :return: 卡方值
-    '''
+    ''' 
     df2 = df.copy()
     # 求出df中，总体的坏样本率和好样本率
     badRate = sum(df2[bad_col])*1.0/sum(df2[total_col])
