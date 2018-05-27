@@ -78,7 +78,7 @@ def MakeupMissing(x):
 # 3，数据集划分成训练集和测试集
 
 
-folderOfData = 'E:/颜旭/数据建模/J03申请评分卡/A_Card/'
+folderOfData = 'E:/...'
 
 allData = pd.read_csv(folderOfData + 'application.csv', header=0, encoding='latin1')
 allData['term'] = allData['term'].apply(lambda x: int(x.replace(' months', '')))
