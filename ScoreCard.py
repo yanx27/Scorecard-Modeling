@@ -15,7 +15,7 @@ from sklearn.metrics import roc_auc_score
 import numpy as np
 import scorecard_function
 
-
+ 
 def CareerYear(x):
     # 对工作年限进行转换
     x = str(x)
