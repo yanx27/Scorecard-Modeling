@@ -5,7 +5,7 @@ import xlrd
 import matplotlib.pyplot as plt
 
 #读取EXCEL数据
-fname="数禾.xlsx"
+fname="XX.xlsx"
 bk=xlrd.open_workbook(fname)
 bk = xlrd.open_workbook(fname)
 shxrange = range(bk.nsheets)
