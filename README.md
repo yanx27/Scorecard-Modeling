@@ -4,13 +4,13 @@
 数据导入和建立 
 -------
 * 读入数据 
-导入数据集 [application.csv](https://github.com/yanx27/ScoreCard-Model-based-on-Machine-Learning/blob/master/application.csv)
+导入数据集： [application.csv](https://github.com/yanx27/ScoreCard-Model-based-on-Machine-Learning/blob/master/application.csv)
 * 选择合适的建模样本 
 * 数据集划分成训练集和测试集
 #
 第一步：数据预处理
 -------
-* 数据清洗
+* 数据清洗：
 时间、类型等
 * 格式转换 
 * 缺失值填补
@@ -57,6 +57,10 @@
 （1）变量显著<br> 
 （2）系数为负<br> 
 * 逻辑回归的原理可见[逻辑回归 - 理论篇](https://blog.csdn.net/pakko/article/details/37878837)
+* 每次迭代中，剔除最不显著的变量，直到<br> 
+（1） 剩余所有变量均显著
+（2） 
+* 亦可尝试L1或L2约束
 #
 第七步：评估
 -------
