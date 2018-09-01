@@ -3,15 +3,13 @@
 #
 数据导入和建立 
 -------
-* 读入数据 
-导入数据集： [application.csv](https://github.com/yanx27/ScoreCard-Model-based-on-Machine-Learning/blob/master/application.csv)
+* 读入数据：导入数据集 [application.csv](https://github.com/yanx27/ScoreCard-Model-based-on-Machine-Learning/blob/master/application.csv)
 * 选择合适的建模样本 
 * 数据集划分成训练集和测试集
 #
 第一步：数据预处理
 -------
-* 数据清洗：
-时间、类型等
+* 数据清洗：时间、类型特征等
 * 格式转换 
 * 缺失值填补
 #
@@ -43,13 +41,15 @@
 
 ![](https://github.com/yanx27/ScoreCard-Model-based-on-Machine-Learning/blob/master/alg2.png)
 * WOE 的值越高，代表着该分组中客户是坏客户的风险越低。
+* IV值是用来衡量某个变量对好坏客户区分能力的一个指标，IV值公式如下：
+![](https://github.com/yanx27/ScoreCard-Model-based-on-Machine-Learning/blob/master/alg3.png)      
+* 关于更详细的WOE和IV可见：[数据挖掘模型中的IV和WOE详解](https://blog.csdn.net/kevin7658/article/details/50780391)
 #
 第五步：单变量分析和多变量分析，均基于WOE编码后的值
 -------
 * 选择IV高于0.02的变量
-* IIV值是用来衡量某个变量对好坏客户区分能力的一个指标，IV值公式如下：
-![](https://github.com/yanx27/ScoreCard-Model-based-on-Machine-Learning/blob/master/alg3.png)      
-* 比较两两线性相关性。如果相关系数的绝对值高于阈值，剔除IV较低的一个
+* 比较两两线性相关性,如果相关系数的绝对值高于阈值，剔除IV较低的一个
+* 亦可使用机器学习的特征选择方法（RF、Xgboost）
 # 
 第六步：逻辑回归模型（或其他机器学习算法）
 -------
