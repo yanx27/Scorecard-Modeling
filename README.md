@@ -16,6 +16,7 @@
 * 缺失值填补
 #
 第二步：变量衍生
+-------
 * 考虑申请额度与收入的占比
 * 考虑earliest_cr_line到申请日期的跨度，以月份记
 
@@ -39,6 +40,7 @@
 -------
 * WOE的公式：<br>
 ![](https://github.com/yanx27/ScoreCard-Model-based-on-Machine-Learning/blob/master/alg1.png)
+
 ![](https://github.com/yanx27/ScoreCard-Model-based-on-Machine-Learning/blob/master/alg2.png)
 * WOE 的值越高，代表着该分组中客户是坏客户的风险越低。
 #
@@ -54,6 +56,7 @@
 * 要求：<br>
 （1）变量显著<br> 
 （2）系数为负<br> 
+* 逻辑回归的原理可见[逻辑回归 - 理论篇](https://blog.csdn.net/pakko/article/details/37878837)
 #
 第七步：评估
 -------
@@ -66,4 +69,5 @@
 （2）把0-1之间等分N份，等分点为阈值，计算TPR、FPR 
 （3）对TPR、FPR描点画图即可
 
-* KS值即为Max(TPR-FPR)
+* KS值即为Max(TPR-FPR)<br> 
+![](https://github.com/yanx27/ScoreCard-Model-based-on-Machine-Learning/blob/master/ks.png)
