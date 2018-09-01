@@ -68,10 +68,10 @@
 * KS值越大，表示模型能够将正、负客户区分开的程度越大。 
 * 通常来讲，KS>0.2即表示模型有较好的预测准确性。
 * KS绘制方式与ROC曲线略有相同，都要计算TPR和FPR。但是TPR和FPR都要做纵轴，横轴为把样本分成多少份。 
-* 步骤： 
-（1）按照分类模型返回的概率降序排列 
-（2）把0-1之间等分N份，等分点为阈值，计算TPR、FPR 
-（3）对TPR、FPR描点画图即可
+* 步骤： <br> 
+（1）按照分类模型返回的概率降序排列 <br> 
+（2）把0-1之间等分N份，等分点为阈值，计算TPR、FPR <br> 
+（3）对TPR、FPR描点画图即可<br> 
 
 * KS值即为Max(TPR-FPR)<br> 
 ![](https://github.com/yanx27/ScoreCard-Model-based-on-Machine-Learning/blob/master/ks.png)
